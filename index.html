@@ -6,6 +6,7 @@
 <title>경명호 · KyeongMyeongHo</title>
 <meta name="description" content="Apps by KyeongMyeongHo (경명호).">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232f6bff'/%3E%3Ctext x='12' y='17' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='14' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/style.css">
 <script>
 (function(){var l;try{l=localStorage.getItem("lang");}catch(e){}
@@ -35,7 +36,14 @@ document.documentElement.dataset.lang=l||((navigator.language||"en").toLowerCase
       <p class="label"><span lang="ko">앱</span><span lang="en">Apps</span></p>
 
       <div class="card">
-        <h3>Cast to TV</h3>
+        <div class="top">
+          <!-- lucide: cast -->
+          <span class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/><path d="M2 12a9 9 0 0 1 8 8"/><path d="M2 16a5 5 0 0 1 4 4"/><line x1="2" x2="2.01" y1="20" y2="20"/></svg></span>
+          <div>
+            <h3>Cast to TV</h3>
+            <p class="meta">Works with Google Cast</p>
+          </div>
+        </div>
         <p>
           <span lang="ko">웹에서 찾은 영상을 큰 화면(TV)으로 캐스트하는 웹 브라우저.</span>
           <span lang="en">A web browser that casts videos you find online to the big screen.</span>
@@ -43,8 +51,9 @@ document.documentElement.dataset.lang=l||((navigator.language||"en").toLowerCase
         <a class="btn" href="https://apps.apple.com/app/id6795522072">
           <span lang="ko">App Store에서 보기</span>
           <span lang="en">View on the App Store</span>
+          <!-- lucide: arrow-up-right -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
         </a>
-        <p class="meta">Works with Google Cast</p>
         <p class="links">
           <a href="/cast-to-tv/privacy/"><span lang="ko">개인정보처리방침</span><span lang="en">Privacy</span></a>
           <a href="/cast-to-tv/terms/"><span lang="ko">이용약관</span><span lang="en">Terms</span></a>
@@ -54,7 +63,11 @@ document.documentElement.dataset.lang=l||((navigator.language||"en").toLowerCase
 
     <section>
       <p class="label"><span lang="ko">문의</span><span lang="en">Contact</span></p>
-      <p><a href="mailto:supungbab@gmail.com">supungbab@gmail.com</a></p>
+      <p class="row">
+        <!-- lucide: mail -->
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <a href="mailto:supungbab@gmail.com">supungbab@gmail.com</a>
+      </p>
     </section>
   </main>
 
