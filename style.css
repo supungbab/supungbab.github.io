@@ -99,29 +99,18 @@ section { margin-top: 40px; }
   margin: 0 0 14px;
 }
 
-/* app card */
+/* app card — one card per app; legal links live inside each card */
 .card {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 18px;
+  padding: 18px 20px;
   background: var(--card);
 }
-.card .icon {
-  flex: 0 0 auto;
-  width: 52px;
-  height: 52px;
-  border-radius: 13px;
-  background: var(--accent);
-  display: grid;
-  place-items: center;
-}
-.card .icon svg { width: 28px; height: 28px; fill: #fff; }
-.card .body { flex: 1 1 auto; min-width: 0; }
-.card h3 { margin: 2px 0 4px; font-size: 18px; }
+.card h3 { margin: 0 0 4px; font-size: 18px; }
 .card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+.card .meta { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+.card .links { margin: 14px 0 0; font-size: 14px; }
+.card .links a { margin-right: 16px; }
 
 .btn {
   display: inline-block;
@@ -134,12 +123,6 @@ section { margin-top: 40px; }
   border-radius: 10px;
 }
 .btn:active { opacity: 0.85; }
-
-.meta {
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 10px;
-}
 
 a { color: var(--accent); }
 
@@ -166,14 +149,12 @@ a { color: var(--accent); }
 .legal .info div { color: var(--muted); }
 .legal .info b { color: var(--fg); font-weight: 600; }
 
-/* footer */
+/* footer — app-agnostic (this is a shared site) */
 footer {
   border-top: 1px solid var(--line);
   padding: 24px 0 40px;
   font-size: 14px;
   color: var(--muted);
 }
-footer nav a { margin-right: 16px; }
-footer .copy { margin-top: 10px; }
 
 .back { display: inline-block; margin: 22px 0 0; font-size: 14px; text-decoration: none; }
