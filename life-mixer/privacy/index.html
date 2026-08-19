@@ -39,37 +39,44 @@ document.documentElement.dataset.lang=l||((navigator.language||"en").toLowerCase
       </div>
 
       <h3>1. 수집하는 정보</h3>
-      <p>개발자는 자체 서버를 운영하지 않으며, 이름·이메일·전화번호 등 사용자를 직접 식별할 수 있는 개인정보를 수집·저장하지 않습니다. 회원가입과 인앱 결제도 없습니다.</p>
+      <p>개발자는 자체 서버를 운영하지 않으며, 이름·이메일·전화번호 등 사용자를 직접 식별할 수 있는 개인정보를 <b>직접 수집·저장하지 않습니다.</b> 회원가입과 인앱 결제도 없습니다. 다만 게임을 무료로 제공하기 위해 광고를 표시하며, 광고 제공사(<b>Google AdMob</b> 등)는 광고 제공·측정 및 분석을 위해 다음과 같은 데이터를 수집할 수 있습니다:</p>
+      <ul>
+        <li><b>식별자</b> — 기기 ID(광고 식별자 포함)</li>
+        <li><b>광고 데이터</b> — 예: 표시·상호작용한 광고</li>
+        <li><b>사용 데이터</b> — 제품 상호작용(게임 사용 기록)</li>
+        <li><b>위치</b> — 대략적 위치</li>
+        <li><b>진단</b> — 충돌 데이터, 성능 데이터</li>
+      </ul>
+      <p>위 데이터의 일부는 사용자의 신원에 연결될 수 있으며, <b>다른 회사가 소유한 앱·웹사이트를 통해 사용자를 추적(cross-app tracking)하는 목적으로 사용될 수 있습니다.</b> 이러한 추적은 App Tracking Transparency(ATT) 동의를 따르며, 동의하지 않으면 비맞춤형 광고가 표시됩니다(자세한 내용 §3).</p>
 
       <h3>2. 기기 내 저장</h3>
-      <p>발견한 원소·도감 진행도·설정(소리, 햅틱 등)은 기기의 로컬 저장소(localStorage)에 저장됩니다. 이 데이터는 <b>사용자의 기기에만</b> 저장되며 개발자의 서버로 전송되지 않습니다. 앱(또는 브라우저 데이터)을 삭제하면 함께 삭제됩니다.</p>
+      <p>발견한 원소·도감 진행도·설정(소리, 햅틱 등)은 기기의 로컬 저장소에 저장됩니다. 이 데이터는 <b>사용자의 기기에만</b> 저장되며 개발자의 서버로 전송되지 않습니다. 게임(또는 브라우저 데이터)을 삭제하면 함께 삭제되고, 개발자는 이를 복구할 수 없습니다.</p>
 
-      <h3>3. 앱인토스(토스 앱 안)에서 이용할 때</h3>
-      <p>본 게임을 토스 앱의 <b>앱인토스</b>에서 실행하면, 아래 기능을 위해 토스가 제공하는 SDK를 사용합니다. 이때 처리되는 데이터는 <a href="https://policies.toss.im/privacy">토스의 개인정보 처리방침</a>을 따릅니다.</p>
+      <h3>3. 광고</h3>
+      <p>본 게임은 무료로 제공되며, 운영을 위해 광고를 표시합니다. 광고는 게임 진행 중 표시되는 전면 광고와, <b>사용자가 직접 선택했을 때만</b> 재생되는 보상형 광고입니다.</p>
+      <p>광고는 제3자 광고 제공사(<b>Google AdMob</b> 등)가 제공하며, 맞춤형 광고와 광고 측정·분석을 위해 §1의 데이터를 수집합니다. 이 정보는 <b>다른 회사의 앱·웹사이트에서 사용자를 추적하는 데 사용될 수 있습니다.</b> 맞춤형 광고를 위해 추적 동의(ATT)를 요청하며, 동의하지 않아도 광고는 비맞춤형으로 계속 표시됩니다. 광고 제공사가 수집·처리하는 데이터는 각 제공사의 정책(예: <a href="https://policies.google.com/privacy">Google의 개인정보처리방침</a>)을 따릅니다.</p>
+      <p>게임이 제공되는 환경에 따라 광고가 표시되지 않을 수 있으며, 그 경우 위 데이터는 수집되지 않습니다.</p>
+
+      <h3>4. 익명 식별값과 순위 기록</h3>
+      <p>순위·업적 기능을 이용하는 경우, 플랫폼이 발급한 <b>익명 식별값</b>과 발견한 원소 수가 플랫폼의 순위 서버로 전송됩니다. 개발자는 이 값 외에 사용자의 실명·연락처 등을 받지 않습니다. 플랫폼은 사용자별 최고 기록만 보관하며, 개발자에게는 이를 삭제·수정하는 수단이 제공되지 않습니다. 해당 기능이 제공되지 않는 환경에서는 어떠한 기록도 전송되지 않습니다.</p>
+
+      <h3>5. 권한</h3>
       <ul>
-        <li><b>게임 로그인</b> — 토스로부터 익명 사용자 식별값(해시)을 받아 광고·리더보드 기능에 사용합니다. 개발자는 이 값 외에 사용자의 실명·연락처 등을 받지 않습니다.</li>
-        <li><b>리더보드</b> — 발견한 원소 수를 토스 게임센터 리더보드에 전송합니다. 토스는 사용자별 최고 기록만 보관하며, 개발자에게는 이를 삭제하는 수단이 제공되지 않습니다.</li>
-        <li><b>광고</b> — 전면 광고가 표시될 수 있으며, 힌트('사수 찬스')는 사용자가 직접 선택했을 때만 보상형 광고를 재생합니다. 광고 노출·측정을 위한 데이터 처리는 토스 및 광고 제공사의 정책을 따릅니다.</li>
+        <li><b>인터넷</b> — 게임 실행에 필요한 리소스 로드, 광고 및 순위 기능 통신에 사용합니다.</li>
+        <li><b>진동</b> — 조작 시 햅틱(진동) 피드백에 사용하며, 게임 내 설정에서 끌 수 있습니다.</li>
       </ul>
-      <p>앱인토스 밖(원스토어 등)에서 실행하면 위 로그인·리더보드·광고 기능은 동작하지 않으며, 게임은 전적으로 기기 안에서만 실행됩니다.</p>
+      <p>위치, 연락처, 카메라, 사진, 저장공간, 마이크 접근 권한은 요청하지 않습니다. 다만 광고 제공사가 IP 주소 등을 통해 <b>대략적 위치</b>를 추정할 수 있습니다(§1·§3 참고).</p>
 
-      <h3>4. 권한</h3>
-      <ul>
-        <li><b>인터넷</b> — 게임 실행 및 앱인토스 환경에서의 광고·리더보드 통신에 사용합니다.</li>
-        <li><b>진동</b> — 조작 시 햅틱(진동) 피드백에 사용합니다.</li>
-      </ul>
-      <p>위치, 연락처, 카메라, 저장공간, 마이크 등 민감한 권한은 요청하지 않습니다.</p>
+      <h3>6. 제3자 분석 도구</h3>
+      <p>개발자는 §3의 광고 제공사 외에 별도의 자체 분석·추적 도구를 사용하지 않습니다.</p>
 
-      <h3>5. 제3자 분석 도구</h3>
-      <p>개발자는 별도의 분석·추적 도구(Firebase, GA 등)를 사용하지 않습니다.</p>
-
-      <h3>6. 아동의 개인정보</h3>
+      <h3>7. 아동의 개인정보</h3>
       <p>본 게임은 아동의 개인정보를 고의로 수집하지 않습니다.</p>
 
-      <h3>7. 정책 변경</h3>
+      <h3>8. 정책 변경</h3>
       <p>본 방침은 변경될 수 있으며, 변경 시 이 페이지에 갱신된 내용과 날짜를 게시합니다.</p>
 
-      <h3>8. 문의</h3>
+      <h3>9. 문의</h3>
       <p>개인정보 관련 문의: <a href="mailto:supungbab@gmail.com">supungbab@gmail.com</a></p>
     </div>
 
@@ -82,37 +89,44 @@ document.documentElement.dataset.lang=l||((navigator.language||"en").toLowerCase
       </div>
 
       <h3>1. Information We Collect</h3>
-      <p>The developer runs no servers and does not collect or store personally identifying information such as your name, email or phone number. There is no sign-up and no in-app purchase.</p>
+      <p>The developer runs no servers and <b>does not itself collect or store</b> personally identifying information such as your name, email, or phone number. There is no sign-up and no in-app purchase. However, to offer the game for free it shows ads, and ad providers (such as <b>Google AdMob</b>) may collect the following data to serve, measure, and analyze ads:</p>
+      <ul>
+        <li><b>Identifiers</b> — device ID (including the advertising identifier)</li>
+        <li><b>Advertising Data</b> — e.g., ads shown or interacted with</li>
+        <li><b>Usage Data</b> — product interaction (in-game activity)</li>
+        <li><b>Location</b> — coarse location</li>
+        <li><b>Diagnostics</b> — crash data, performance data</li>
+      </ul>
+      <p>Some of this data may be linked to your identity and <b>may be used to track you across apps and websites owned by other companies (cross-app tracking).</b> Such tracking is subject to your App Tracking Transparency (ATT) choice; if you decline, non-personalized ads are shown (see Section 3).</p>
 
       <h3>2. On-Device Storage</h3>
-      <p>Discovered elements, collection progress and settings (sound, haptics) are kept in your device's local storage. This data is stored <b>only on your device</b> and is never sent to the developer's servers. Deleting the app (or its browser data) deletes it as well.</p>
+      <p>Discovered elements, collection progress, and settings (sound, haptics) are kept in your device's local storage. This data is stored <b>only on your device</b> and is never sent to the developer's servers. Deleting the game (or its browser data) deletes it as well, and the developer cannot restore it.</p>
 
-      <h3>3. When Played Inside Apps in Toss</h3>
-      <p>When the game runs inside <b>Apps in Toss</b> (within the Toss app), it uses Toss-provided SDKs for the features below. Data processed this way is subject to <a href="https://policies.toss.im/privacy">Toss's Privacy Policy</a>.</p>
+      <h3>3. Advertising</h3>
+      <p>The game is provided free of charge and shows ads to support its operation: a full-screen ad during play, and a rewarded ad that plays <b>only when you choose to watch one</b>.</p>
+      <p>Ads are served by third-party ad providers (such as <b>Google AdMob</b>), which collect the data listed in Section 1 for personalized ads and for ad measurement and analytics. That information <b>may be used to track you across other companies' apps and websites.</b> Consent for tracking (ATT) is requested for personalized ads; if you decline, non-personalized ads are still shown. Data collected and processed by ad providers is subject to their own policies (e.g. <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>).</p>
+      <p>Depending on where the game is distributed, ads may not be shown at all — in which case none of the data above is collected.</p>
+
+      <h3>4. Anonymous Identifier &amp; Leaderboard Records</h3>
+      <p>When leaderboard or achievement features are used, an <b>anonymous identifier</b> issued by the platform and the number of elements you have discovered are sent to the platform's leaderboard service. The developer receives nothing beyond that value — no real name, no contact details. The platform keeps only each user's best record, and the developer is given no means to delete or edit it. Where these features are unavailable, no record is transmitted at all.</p>
+
+      <h3>5. Permissions</h3>
       <ul>
-        <li><b>Game login</b> — Toss issues an anonymous user hash, used for ads and the leaderboard. The developer receives nothing beyond that value — no real name, no contact details.</li>
-        <li><b>Leaderboard</b> — The number of elements you have discovered is submitted to the Toss Game Center leaderboard. Toss keeps only each user's best record, and the developer is given no means to delete it.</li>
-        <li><b>Ads</b> — A full-screen ad may be shown, and the hint feature ("사수 찬스") plays a rewarded ad only when you choose it. Data processing for ad delivery and measurement is subject to the policies of Toss and its ad providers.</li>
+        <li><b>Internet</b> — to load the resources the game needs and to communicate for ads and leaderboard features.</li>
+        <li><b>Vibrate</b> — for haptic feedback during play; it can be turned off in the game's settings.</li>
       </ul>
-      <p>Outside Apps in Toss (e.g. the ONE store build), login, leaderboard and ads are inactive and the game runs entirely on your device.</p>
+      <p>No access permissions for location, contacts, camera, photos, storage, or microphone are requested. Ad providers may, however, infer a <b>coarse location</b> from data such as your IP address (see Sections 1 and 3).</p>
 
-      <h3>4. Permissions</h3>
-      <ul>
-        <li><b>Internet</b> — to run the game and, inside Apps in Toss, to communicate for ads and the leaderboard.</li>
-        <li><b>Vibrate</b> — for haptic feedback during play.</li>
-      </ul>
-      <p>No sensitive permissions (location, contacts, camera, storage, microphone) are requested.</p>
+      <h3>6. Third-Party Analytics</h3>
+      <p>Beyond the ad providers in Section 3, the developer uses no separate analytics or tracking tools of its own.</p>
 
-      <h3>5. Third-Party Analytics</h3>
-      <p>The developer uses no separate analytics or tracking tools (Firebase, GA, etc.).</p>
-
-      <h3>6. Children's Privacy</h3>
+      <h3>7. Children's Privacy</h3>
       <p>The game does not knowingly collect personal information from children.</p>
 
-      <h3>7. Changes to This Policy</h3>
+      <h3>8. Changes to This Policy</h3>
       <p>We may update this policy; changes will be posted on this page with an updated date.</p>
 
-      <h3>8. Contact</h3>
+      <h3>9. Contact</h3>
       <p>Privacy inquiries: <a href="mailto:supungbab@gmail.com">supungbab@gmail.com</a></p>
     </div>
 
