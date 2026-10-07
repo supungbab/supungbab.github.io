@@ -216,7 +216,7 @@ section { margin-top: 44px; }
   align-items: center;
   gap: 6px;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent, #fff);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -317,7 +317,7 @@ footer {
 .post figure { margin: 0; text-align: center; }
 .post figure img { width: 100%; height: auto; border-radius: 14px; box-shadow: var(--shadow); display: block; }
 .post figcaption { font-size: 14px; font-weight: 600; margin-top: 8px; line-height: 1.4; }
-.post figcaption b { display: inline-flex; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; align-items: center; justify-content: center; margin-right: 4px; }
+.post figcaption b { display: inline-flex; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: var(--on-accent, #fff); font-size: 12px; align-items: center; justify-content: center; margin-right: 4px; }
 .post .center { text-align: center; color: var(--muted); }
 .post .center b { color: var(--fg); }
 .post .checks { list-style: none; padding: 0; margin: 0; }
@@ -353,3 +353,29 @@ footer {
 .post .combos { list-style: none; padding: 0; margin: 0 0 8px; }
 .post .combos li { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 14px 16px; margin-bottom: 8px; font-weight: 500; }
 .post .combos li b { color: var(--accent); white-space: nowrap; }
+
+/* per-app themes — colors taken from each app's own palette */
+body.theme-cast { --accent: #2e5ce6; --accent-soft: rgba(46, 92, 230, 0.10); }
+body.theme-offiky { --accent: #2f7d1c; --accent-soft: rgba(108, 179, 40, 0.14); }
+@media (prefers-color-scheme: dark) {
+  body.theme-cast { --accent: #5b8df7; --accent-soft: rgba(91, 141, 247, 0.14); --on-accent: #0b0c0e; }
+  body.theme-offiky { --accent: #afe356; --accent-soft: rgba(175, 227, 86, 0.12); --on-accent: #0b0c0e; }
+}
+/* the-perfect: always dark, lime = PERFECT score color */
+body.theme-perfect {
+  --bg: #0a0a0a; --fg: #f0f0f0; --muted: #888888; --faint: #666666;
+  --line: #1f1f1f; --line-strong: #2e2e2e; --card: #1a1a1a; --panel: #141414;
+  --accent: #c8ff00; --accent-soft: rgba(200, 255, 0, 0.08); --on-accent: #0a0a0a;
+  --shadow: 0 0 0 1px #222; --shadow-lift: 0 0 0 1px #2e2e2e;
+  color-scheme: dark;
+}
+/* life-mixer: always paper, ink text, stamp red, sticker-yellow buttons */
+body.theme-life-mixer {
+  --bg: #faf6ef; --fg: #1f2a44; --muted: #6b7280; --faint: #9aa0a8;
+  --line: #ece4d4; --line-strong: #d9d0bd; --card: #fffdf5; --panel: #efe7d6;
+  --accent: #c03a2b; --accent-soft: rgba(255, 229, 107, 0.45);
+  --shadow: 0 0 0 2px #1f2a44; --shadow-lift: 0 0 0 2px #1f2a44;
+  color-scheme: light;
+}
+body.theme-life-mixer .btn:not(.ghost) { background: #ffe56b; color: #1f2a44; box-shadow: inset 0 0 0 2px #1f2a44, 0 4px 0 #1f2a44; }
+body.theme-life-mixer .post .hero, body.theme-life-mixer .post figure img { border-radius: 4px; }
