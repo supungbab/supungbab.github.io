@@ -346,3 +346,10 @@ footer {
   .post .steps.four { grid-template-columns: repeat(2, 1fr); row-gap: 16px; }
   .post pre { font-size: 13px; }
 }
+
+/* game posts (the-perfect, life-mixer) */
+.post .hero.phone { max-width: 260px; margin-left: auto; margin-right: auto; }
+.post .solo.wide { max-width: 260px; }
+.post .combos { list-style: none; padding: 0; margin: 0 0 8px; }
+.post .combos li { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 14px 16px; margin-bottom: 8px; font-weight: 500; }
+.post .combos li b { color: var(--accent); white-space: nowrap; }
