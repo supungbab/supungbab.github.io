@@ -3,18 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>아이폰에서 크롬캐스트로 웹 영상 보내는 법 (사파리 영상 포함)</title>
-<meta name="description" content="아이폰 사파리에는 크롬캐스트 버튼이 없습니다. 앱 자체 캐스트 버튼을 쓰는 법, 웹사이트 영상을 크롬캐스트로 보내는 법, 되는 영상과 안 되는 영상, 연결이 안 될 때 확인할 것을 정리했습니다.">
+<title>아이폰 크롬캐스트, 사파리 영상도 TV로 보내는 가장 쉬운 방법</title>
+<meta name="description" content="아이폰 사파리엔 크롬캐스트 버튼이 없죠? Cast to TV 하나면 웹 영상을 탭 몇 번으로 TV에 띄울 수 있습니다. m3u8 라이브, MP4, 자막, 폰 영상까지. 무료.">
 <link rel="canonical" href="https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="경명호">
 <meta name="apple-itunes-app" content="app-id=6795522072">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="경명호 · KyeongMyeongHo">
-<meta property="og:title" content="아이폰에서 크롬캐스트로 웹 영상 보내는 법">
-<meta property="og:description" content="사파리에는 크롬캐스트 버튼이 없습니다. 웹사이트 영상을 TV로 보내는 방법과 되는 영상·안 되는 영상을 정리했습니다.">
+<meta property="og:site_name" content="Cast to TV">
+<meta property="og:title" content="아이폰 크롬캐스트, 사파리 영상도 TV로 보내는 가장 쉬운 방법">
+<meta property="og:description" content="사파리엔 캐스트 버튼이 없죠? 앱 하나면 끝. 웹 영상을 탭 몇 번으로 TV에.">
 <meta property="og:url" content="https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/">
 <meta property="og:image" content="https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -33,15 +32,15 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "아이폰에서 크롬캐스트로 웹 영상 보내는 법 (사파리 영상 포함)",
-      "description": "아이폰 사파리에는 크롬캐스트 버튼이 없습니다. 앱 자체 캐스트 버튼을 쓰는 법, 웹사이트 영상을 크롬캐스트로 보내는 법, 되는 영상과 안 되는 영상, 연결이 안 될 때 확인할 것을 정리했습니다.",
-      "image": "https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/og.jpg",
+      "headline": "아이폰 크롬캐스트, 사파리 영상도 TV로 보내는 가장 쉬운 방법",
+      "description": "아이폰 사파리엔 크롬캐스트 버튼이 없죠? Cast to TV 하나면 웹 영상을 탭 몇 번으로 TV에 띄울 수 있습니다.",
+      "image": ["https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/og.jpg"],
       "datePublished": "2026-10-07",
       "dateModified": "2026-10-07",
       "inLanguage": "ko",
       "mainEntityOfPage": "https://supungbab.github.io/cast-to-tv/guide/iphone-chromecast/",
-      "author": { "@type": "Person", "name": "경명호", "url": "https://supungbab.github.io/" },
-      "publisher": { "@type": "Person", "name": "경명호", "url": "https://supungbab.github.io/" },
+      "author": { "@type": "Organization", "name": "Cast to TV", "url": "https://supungbab.github.io/" },
+      "publisher": { "@type": "Organization", "name": "Cast to TV", "url": "https://supungbab.github.io/" },
       "about": {
         "@type": "MobileApplication",
         "name": "Cast to TV",
@@ -56,23 +55,18 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "아이폰 화면을 크롬캐스트로 미러링할 수 있나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "아이폰의 화면 미러링은 AirPlay 방식이라 크롬캐스트에서는 동작하지 않습니다. 화면 전체가 아니라 영상만 보내는 것이라면, 앱의 캐스트 버튼이나 웹 영상 캐스트 앱으로 원본 화질 그대로 TV에서 재생할 수 있습니다." }
+          "name": "아이폰 사파리 영상을 크롬캐스트로 보낼 수 있나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "사파리에는 크롬캐스트 버튼이 없지만, Cast to TV 앱에서 같은 사이트를 열고 영상을 재생하면 TV로 바로 보낼 수 있습니다." }
         },
         {
           "@type": "Question",
-          "name": "유튜브나 넷플릭스 웹사이트 영상도 보낼 수 있나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "유튜브·넷플릭스·디즈니+ 같은 서비스는 웹 영상을 다른 기기로 보낼 수 없는 방식(DRM, 전용 재생 방식)을 씁니다. 이런 서비스는 각 서비스의 공식 앱에 있는 캐스트 버튼을 쓰세요." }
+          "name": "넷플릭스나 유튜브도 되나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "넷플릭스·유튜브·디즈니+는 각 서비스의 공식 앱에 있는 캐스트 버튼을 쓰세요. Cast to TV는 그 외 웹사이트 영상용입니다." }
         },
         {
           "@type": "Question",
-          "name": "캐스트 중에 아이폰 화면을 꺼도 되나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "크롬캐스트가 원본 주소에서 직접 영상을 받아 재생하므로 화면을 끄거나 다른 앱을 써도 TV 재생은 계속됩니다. 단, 로그인이 필요한 일부 사이트의 영상은 앱이 중계하는 방식이라 전화 수신 등으로 앱이 백그라운드에서 중단되면 재생이 멈출 수 있습니다." }
-        },
-        {
-          "@type": "Question",
-          "name": "크롬캐스트가 목록에 보이지 않아요.",
-          "acceptedAnswer": { "@type": "Answer", "text": "아이폰과 크롬캐스트가 같은 Wi-Fi에 연결돼 있는지, 아이폰 설정 > 개인정보 보호 및 보안 > 로컬 네트워크에서 해당 앱이 허용돼 있는지 확인하세요. 게스트 Wi-Fi나 VPN을 쓰고 있다면 기기를 찾지 못할 수 있습니다." }
+          "name": "크롬캐스트가 안 보여요.",
+          "acceptedAnswer": { "@type": "Answer", "text": "아이폰과 크롬캐스트가 같은 Wi-Fi인지, 아이폰 설정 > 개인정보 보호 및 보안 > 로컬 네트워크에서 앱이 허용돼 있는지 확인하세요. VPN은 끄세요." }
         }
       ]
     }
@@ -83,97 +77,72 @@
 <body>
 <div class="wrap">
 
-  <header>
-    <p class="crumbs"><a href="/">경명호</a> · Cast to TV 가이드</p>
-    <h1>아이폰에서 크롬캐스트로 웹 영상 보내는 법</h1>
-    <p class="tagline">사파리에서 보던 영상을 TV로 보내는 방법과, 되는 영상·안 되는 영상</p>
-  </header>
+  <main class="post">
+    <p class="kicker">아이폰 × 크롬캐스트</p>
+    <h1>사파리 영상,<br><span class="hl">TV로 바로 보내는 법</span></h1>
+    <p class="lede">아이폰 사파리엔 크롬캐스트 버튼이 없죠?<br><b>앱 하나면 끝납니다.</b> 영상 열고, 재생하고, TV 고르면 끝.</p>
 
-  <main class="legal article">
-    <p class="updated">2026년 10월 7일 · 경명호</p>
+    <img class="hero" src="hero.jpg" width="1600" height="1066" alt="아이폰에서 재생한 웹 영상이 크롬캐스트로 TV에 나오는 모습">
 
-    <p class="note">이 글은 웹 영상 캐스트 앱 <b>Cast to TV</b>를 만든 개발자가 썼습니다. 우리 앱 외에 공식 앱으로 해결되는 경우도 함께 정리했습니다.</p>
+    <a class="btn big" href="https://apps.apple.com/kr/app/id6795522072">Cast to TV 무료 다운로드
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
 
-    <h2 id="why">사파리에는 왜 캐스트 버튼이 없을까</h2>
-    <p>크롬캐스트는 구글의 <b>Google Cast</b> 방식을 쓰고, 아이폰은 애플의 <b>AirPlay</b> 방식을 씁니다. 사파리와 아이폰 화면 미러링은 AirPlay만 지원하기 때문에, 아이폰 기본 기능만으로는 크롬캐스트에 영상을 보낼 수 없습니다.</p>
-    <p>그래서 아이폰에서 크롬캐스트를 쓰려면 <b>Google Cast를 지원하는 앱</b>이 필요합니다. 상황에 따라 방법이 두 가지로 나뉩니다.</p>
-
-    <h2 id="official-app">방법 1. 서비스 공식 앱의 캐스트 버튼 쓰기</h2>
-    <p>유튜브, 넷플릭스, 디즈니+, 티빙처럼 <b>공식 앱이 있는 서비스</b>라면 이 방법이 가장 확실합니다.</p>
-    <ol>
-      <li>아이폰과 크롬캐스트를 같은 Wi-Fi에 연결합니다.</li>
-      <li>서비스의 공식 앱을 열고 영상 화면의 캐스트 아이콘(모서리에 전파 표시가 있는 사각형)을 누릅니다.</li>
-      <li>목록에서 크롬캐스트를 선택합니다.</li>
-    </ol>
-    <p>이 서비스들은 영상 보호(DRM) 때문에 웹사이트 영상을 다른 앱으로 보낼 수 없습니다. 공식 앱의 버튼을 쓰는 게 유일한 방법입니다.</p>
-
-    <h2 id="web-video">방법 2. 웹사이트 영상을 크롬캐스트로 보내기</h2>
-    <p>공식 앱이 없거나 캐스트 버튼이 없는 사이트, 예를 들어 뉴스 사이트의 영상, 강의 영상, 학교·지역 방송의 라이브, 개인 미디어 서버의 웹 플레이어 등은 <b>캐스트 기능이 있는 브라우저 앱</b>으로 열면 TV로 보낼 수 있습니다.</p>
-    <p><b>Cast to TV</b> 기준으로 순서는 이렇습니다.</p>
-    <ol>
-      <li>앱 주소창에서 영상이 있는 웹사이트를 엽니다.</li>
-      <li>페이지에서 영상을 재생합니다. 앱이 페이지 속 실제 영상 주소를 찾으면 주소창에 <b>TV 아이콘</b>이 나타납니다.</li>
-      <li>TV 아이콘을 누르면 찾은 영상 목록이 나옵니다. 보낼 영상을 고릅니다.</li>
-      <li>크롬캐스트를 선택하면 TV에서 재생이 시작됩니다.</li>
-    </ol>
-    <p>화면 미러링과 달리 크롬캐스트가 <b>원본 주소에서 직접</b> 영상을 받아 재생하므로 화질이 원본 그대로이고, 재생 중에 아이폰으로 다른 일을 해도 됩니다.</p>
-
-    <div class="cta">
-      <p><b>Cast to TV</b> · 무료(광고 포함) · iPhone</p>
-      <a class="btn" href="https://apps.apple.com/kr/app/id6795522072">App Store에서 보기
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-      </a>
+    <h2>딱 3단계</h2>
+    <div class="steps">
+      <figure>
+        <img src="06_browser.jpg" width="506" height="1100" loading="lazy" alt="Cast to TV 브라우저 첫 화면">
+        <figcaption><b>1</b> 앱에서 영상 사이트 열기</figcaption>
+      </figure>
+      <figure>
+        <img src="02_cast.jpg" width="506" height="1100" loading="lazy" alt="영상 감지 후 TV로 전송 버튼">
+        <figcaption><b>2</b> 영상 재생 → TV로 전송</figcaption>
+      </figure>
+      <figure>
+        <img src="03_pick.jpg" width="506" height="1100" loading="lazy" alt="크롬캐스트 기기 선택 화면">
+        <figcaption><b>3</b> 우리 집 TV 선택</figcaption>
+      </figure>
     </div>
+    <p class="center">미러링이 아니라 <b>TV가 원본 화질로 직접 재생</b>합니다.<br>폰은 그동안 마음대로 쓰세요.</p>
 
-    <h2 id="support">되는 영상과 안 되는 영상</h2>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>영상 종류</th><th>캐스트</th></tr></thead>
-        <tbody>
-          <tr><td>HLS 스트림(m3u8), 라이브 방송</td><td class="ok">됨</td></tr>
-          <tr><td>MP4·WebM·MOV 파일</td><td class="ok">됨</td></tr>
-          <tr><td>MP3·M4A 오디오</td><td class="ok">됨</td></tr>
-          <tr><td>아이폰에 저장된 영상</td><td class="ok">됨</td></tr>
-          <tr><td>자막(WebVTT)</td><td class="ok">됨</td></tr>
-          <tr><td>넷플릭스·디즈니+ 등 DRM 보호 영상</td><td class="no">안 됨 → 공식 앱 사용</td></tr>
-          <tr><td>유튜브 웹사이트 영상</td><td class="no">안 됨 → 유튜브 앱 사용</td></tr>
-          <tr><td>HEVC(H.265)·AV1 영상을 구형 크롬캐스트로</td><td class="no">기기에 따라 안 됨</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>페이지에서는 재생되는데 캐스트가 안 된다면, 대부분 위의 DRM이나 코덱 문제입니다.</p>
-
-    <h2 id="troubleshoot">크롬캐스트가 안 보이거나 연결이 안 될 때</h2>
-    <ul>
-      <li><b>같은 Wi-Fi인지 확인:</b> 아이폰과 크롬캐스트가 같은 공유기에 연결돼 있어야 합니다. 게스트 Wi-Fi는 기기끼리 서로 보이지 않게 막혀 있는 경우가 많습니다.</li>
-      <li><b>로컬 네트워크 권한:</b> 아이폰 <b>설정 → 개인정보 보호 및 보안 → 로컬 네트워크</b>에서 캐스트 앱이 허용돼 있는지 확인합니다. 처음 실행할 때 이 권한을 거부하면 기기를 찾지 못합니다.</li>
-      <li><b>VPN 끄기:</b> VPN이 켜져 있으면 같은 Wi-Fi의 기기를 찾지 못할 수 있습니다.</li>
-      <li><b>크롬캐스트 재시작:</b> 전원을 뺐다가 다시 연결하면 해결되는 경우가 많습니다.</li>
+    <h2>이런 것까지 됩니다</h2>
+    <ul class="checks">
+      <li>m3u8 라이브 방송, MP4·WebM·MOV 영상</li>
+      <li>자막(WebVTT) 표시</li>
+      <li>폰에 저장된 영상도 TV로</li>
+      <li>잠금화면에서 재생·일시정지·탐색</li>
+      <li>다른 앱 써도 TV는 계속 재생</li>
+      <li>앱에서 TV 볼륨 조절</li>
     </ul>
 
-    <h2 id="faq">자주 묻는 질문</h2>
-    <h3>아이폰 화면을 크롬캐스트로 미러링할 수 있나요?</h3>
-    <p>아이폰의 화면 미러링은 AirPlay 방식이라 크롬캐스트에서는 동작하지 않습니다. 화면 전체가 아니라 영상만 보내는 것이라면, 앱의 캐스트 버튼이나 웹 영상 캐스트 앱으로 원본 화질 그대로 TV에서 재생할 수 있습니다.</p>
+    <div class="steps two">
+      <figure>
+        <img src="04_control.jpg" width="506" height="1100" loading="lazy" alt="폰에서 TV 재생 조종 화면">
+        <figcaption>폰에서 전부 조종</figcaption>
+      </figure>
+      <figure>
+        <img src="05_library.jpg" width="506" height="1100" loading="lazy" alt="폰에 저장된 영상 목록">
+        <figcaption>폰 영상도 TV로</figcaption>
+      </figure>
+    </div>
 
-    <h3>유튜브나 넷플릭스 웹사이트 영상도 보낼 수 있나요?</h3>
-    <p>유튜브·넷플릭스·디즈니+ 같은 서비스는 웹 영상을 다른 기기로 보낼 수 없는 방식(DRM, 전용 재생 방식)을 씁니다. 이런 서비스는 각 서비스의 공식 앱에 있는 캐스트 버튼을 쓰세요.</p>
+    <h2>무료 + 꾸준한 업데이트</h2>
+    <p>구독 없이 <b>무료</b>입니다(광고 포함). 출시 이후 캐스트 안정성과 지원 사이트를 계속 개선하고 있어요. 안 되는 사이트가 있으면 App Store 리뷰로 알려 주세요.</p>
 
-    <h3>캐스트 중에 아이폰 화면을 꺼도 되나요?</h3>
-    <p>크롬캐스트가 원본 주소에서 직접 영상을 받아 재생하므로 화면을 끄거나 다른 앱을 써도 TV 재생은 계속됩니다. 단, 로그인이 필요한 일부 사이트의 영상은 앱이 중계하는 방식이라 전화 수신 등으로 앱이 백그라운드에서 중단되면 재생이 멈출 수 있습니다.</p>
+    <div class="tip">
+      <p><b>💡 넷플릭스·유튜브는?</b><br>각 서비스 공식 앱의 캐스트 버튼을 쓰세요. Cast to TV는 그 외 웹사이트 영상용이에요.</p>
+      <p><b>💡 TV가 안 보이면?</b><br>같은 Wi-Fi인지 확인 → 아이폰 설정 › 개인정보 보호 및 보안 › 로컬 네트워크에서 허용 → VPN 끄기</p>
+    </div>
 
-    <h3>크롬캐스트가 목록에 보이지 않아요.</h3>
-    <p>아이폰과 크롬캐스트가 같은 Wi-Fi에 연결돼 있는지, 아이폰 설정 → 개인정보 보호 및 보안 → 로컬 네트워크에서 해당 앱이 허용돼 있는지 확인하세요. 게스트 Wi-Fi나 VPN을 쓰고 있다면 기기를 찾지 못할 수 있습니다.</p>
-
-    <p class="fineprint">Google Cast와 Chromecast는 Google LLC의 상표이며, Cast to TV는 Google과 제휴 관계가 없습니다. 시청·캐스트할 권리가 있는 콘텐츠만 이용하세요.</p>
-
-    <a class="back" href="/">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
-      홈으로
+    <a class="btn big" href="https://apps.apple.com/kr/app/id6795522072">지금 TV로 보내기
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
     </a>
+
+    <p class="fineprint">Google Cast와 Chromecast는 Google LLC의 상표이며, Cast to TV는 Google과 제휴 관계가 없습니다. 시청 권리가 있는 콘텐츠만 이용하세요.</p>
   </main>
 
   <footer>
-    <div class="copy">© 2026 경명호 · KyeongMyeongHo</div>
+    <div class="copy">© 2026 Cast to TV</div>
   </footer>
 
 </div>
