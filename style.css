@@ -357,9 +357,11 @@ footer {
 /* per-app themes — colors taken from each app's own palette */
 body.theme-cast { --accent: #2e5ce6; --accent-soft: rgba(46, 92, 230, 0.10); }
 body.theme-offiky { --accent: #2f7d1c; --accent-soft: rgba(108, 179, 40, 0.14); }
+body.theme-psr { --accent: #0e8a5f; --accent-soft: rgba(14, 138, 95, 0.10); }
 @media (prefers-color-scheme: dark) {
   body.theme-cast { --accent: #5b8df7; --accent-soft: rgba(91, 141, 247, 0.14); --on-accent: #0b0c0e; }
   body.theme-offiky { --accent: #afe356; --accent-soft: rgba(175, 227, 86, 0.12); --on-accent: #0b0c0e; }
+  body.theme-psr { --accent: #3ccf95; --accent-soft: rgba(60, 207, 149, 0.12); --on-accent: #0b0c0e; }
 }
 /* the-perfect: always dark, lime = PERFECT score color */
 body.theme-perfect {
