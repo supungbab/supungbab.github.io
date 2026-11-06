@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhoneのSafari動画をChromecastでテレビに映す方法</title>
+<meta name="description" content="iPhoneのSafariにはChromecastのボタンがありません。Cast to TVなら、Web動画を数タップでテレビに送れます。M3U8ライブ配信、MP4、字幕、スマートフォンに保存した動画にも対応。無料。">
+<link rel="canonical" href="https://supungbab.github.io/cast-to-tv/guide/ja/">
+<link rel="alternate" hreflang="ko" href="https://supungbab.github.io/cast-to-tv/guide/">
+<link rel="alternate" hreflang="en" href="https://supungbab.github.io/cast-to-tv/guide/en/">
+<link rel="alternate" hreflang="ja" href="https://supungbab.github.io/cast-to-tv/guide/ja/">
+<link rel="alternate" hreflang="x-default" href="https://supungbab.github.io/cast-to-tv/guide/en/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="apple-itunes-app" content="app-id=6795522072">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Cast to TV">
+<meta property="og:title" content="iPhoneのSafari動画をChromecastでテレビに映す方法">
+<meta property="og:description" content="Safariにはキャストボタンがありません。アプリひとつで、Web動画を数タップでテレビに送れます。">
+<meta property="og:url" content="https://supungbab.github.io/cast-to-tv/guide/ja/">
+<meta property="og:image" content="https://supungbab.github.io/cast-to-tv/guide/ja/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="iPhoneで再生したWeb動画をChromecastでテレビに映している様子">
+<meta property="article:published_time" content="2026-11-06">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232f6bff'/%3E%3Ctext x='12' y='17' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='14' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "iPhoneのSafari動画をChromecastでテレビに映す方法",
+      "description": "iPhoneのSafariにはChromecastのボタンがありません。Cast to TVなら、Web動画を数タップでテレビに送れます。",
+      "image": ["https://supungbab.github.io/cast-to-tv/guide/ja/og.jpg"],
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://supungbab.github.io/cast-to-tv/guide/ja/",
+      "author": { "@type": "Organization", "name": "Cast to TV", "url": "https://supungbab.github.io/" },
+      "publisher": { "@type": "Organization", "name": "Cast to TV", "url": "https://supungbab.github.io/" },
+      "about": {
+        "@type": "MobileApplication",
+        "name": "Cast to TV",
+        "operatingSystem": "iOS",
+        "applicationCategory": "MultimediaApplication",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+        "url": "https://apps.apple.com/jp/app/id6795522072"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "iPhoneのSafariの動画をChromecastでテレビに映せますか?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SafariにはChromecastのボタンがありませんが、同じサイトをCast to TVで開いて動画を再生すれば、そのままテレビに送れます。" }
+        },
+        {
+          "@type": "Question",
+          "name": "NetflixやYouTubeでも使えますか?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Netflix、YouTube、Disney+は、各サービスの公式アプリにあるキャストボタンをお使いください。Cast to TVは、それ以外のWebサイトの動画向けです。" }
+        },
+        {
+          "@type": "Question",
+          "name": "Chromecastが表示されません。",
+          "acceptedAnswer": { "@type": "Answer", "text": "iPhoneとChromecastが同じWi-Fiに接続されているか確認し、設定 > プライバシーとセキュリティ > ローカルネットワークでアプリを許可し、VPNをオフにしてください。" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="theme-cast">
+<div class="wrap">
+
+  <main class="post">
+    <p class="kicker">iPhone × Chromecast</p>
+    <h1>Safariの動画を、<br><span class="hl">そのままテレビへ</span></h1>
+    <p class="lede">iPhoneのSafariにはChromecastのボタンがありません。<br><b>アプリがひとつあれば解決します。</b> 動画を開いて、再生して、テレビを選ぶだけ。</p>
+
+    <img class="hero" src="hero.jpg" width="1600" height="1066" alt="iPhoneで再生したWeb動画がChromecastでテレビに映っている様子">
+
+    <a class="btn big" href="https://apps.apple.com/jp/app/id6795522072">Cast to TVを無料でダウンロード
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+
+    <h2>たった3ステップ</h2>
+    <div class="steps">
+      <figure>
+        <img src="06_browser.jpg" width="506" height="1100" loading="lazy" alt="Cast to TVのブラウザの最初の画面">
+        <figcaption><b>1</b> アプリで動画サイトを開く</figcaption>
+      </figure>
+      <figure>
+        <img src="02_cast.jpg" width="506" height="1100" loading="lazy" alt="再生すると表示される、送る動画の一覧">
+        <figcaption><b>2</b> 動画を再生 → 送る動画を選ぶ</figcaption>
+      </figure>
+      <figure>
+        <img src="03_pick.jpg" width="506" height="1100" loading="lazy" alt="Chromecastデバイスの選択画面">
+        <figcaption><b>3</b> テレビを選ぶ</figcaption>
+      </figure>
+    </div>
+    <p class="center">ミラーリングではなく、<b>テレビが元の画質のまま直接再生</b>します。<br>その間、スマートフォンは自由に使えます。</p>
+
+    <h2>こんなこともできます</h2>
+    <ul class="checks">
+      <li>M3U8ライブ配信、MP4・WebM・MOV動画</li>
+      <li>字幕(WebVTT)の表示</li>
+      <li>スマートフォンに保存した動画もテレビへ</li>
+      <li>ロック画面から再生・一時停止・シーク</li>
+      <li>ほかのアプリを使っていてもテレビで再生を継続</li>
+      <li>アプリからテレビの音量を調整</li>
+    </ul>
+
+    <div class="steps two">
+      <figure>
+        <img src="04_control.jpg" width="506" height="1100" loading="lazy" alt="スマートフォンでテレビの再生を操作する画面">
+        <figcaption>スマートフォンですべて操作</figcaption>
+      </figure>
+      <figure>
+        <img src="05_library.jpg" width="506" height="1100" loading="lazy" alt="スマートフォンに保存した動画の一覧">
+        <figcaption>スマートフォンの動画もテレビへ</figcaption>
+      </figure>
+    </div>
+
+    <h2>無料で、更新も続けています</h2>
+    <p>サブスクリプションは不要で、<b>無料</b>です(広告あり)。キャストの安定性や対応サイトを、アップデートのたびに改善しています。再生できないサイトがあれば、App Storeのレビューで教えてください。</p>
+
+    <div class="tip">
+      <p><b>💡 NetflixやYouTubeは?</b><br>各サービスの公式アプリにあるキャストボタンをお使いください。Cast to TVは、それ以外のWebサイトの動画向けです。</p>
+      <p><b>💡 テレビが表示されないときは?</b><br>同じWi-Fiに接続しているか確認 → iPhoneの設定 › プライバシーとセキュリティ › ローカルネットワークでアプリを許可 → VPNをオフ</p>
+    </div>
+
+    <a class="btn big" href="https://apps.apple.com/jp/app/id6795522072">今すぐテレビに送る
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+
+    <p class="center"><a href="/cast-to-tv/guide/en/" hreflang="en" lang="en">Read in English</a> · <a href="/cast-to-tv/guide/" hreflang="ko" lang="ko">한국어로 보기</a></p>
+
+    <p class="fineprint">Google CastおよびChromecastはGoogle LLCの商標であり、Cast to TVはGoogleとは提携していません。視聴する権利のあるコンテンツのみご利用ください。</p>
+  </main>
+
+  <footer>
+    <div class="copy">© 2026 Cast to TV</div>
+  </footer>
+
+</div>
+</body>
+</html>
